@@ -14,6 +14,7 @@ You can create JAR using `mvn clean package`
 DB Operations
 -------------
 * Add a record - Response(HTTP 201: Created)
+
 `curl --location --request POST 'http://localhost:8080/customers' \
  --header 'Content-Type: application/json' \
  --data-raw '{
@@ -24,4 +25,5 @@ DB Operations
  }'`
  
  * Query the record using ID
+ 
  `http://localhost:8080/customers/2`
